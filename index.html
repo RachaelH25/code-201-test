@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+      html,
+      body,
+      div,
+      span,
+      applet,
+      object,
+      iframe,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p,
+      blockquote,
+      pre,
+      a,
+      abbr,
+      acronym,
+      address,
+      big,
+      cite,
+      code,
+      del,
+      dfn,
+      em,
+      img,
+      ins,
+      kbd,
+      q,
+      s,
+      samp,
+      small,
+      strike,
+      strong,
+      sub,
+      sup,
+      tt,
+      var,
+      b,
+      u,
+      i,
+      center,
+      dl,
+      dt,
+      dd,
+      ol,
+      ul,
+      li,
+      fieldset,
+      form,
+      label,
+      legend,
+      table,
+      caption,
+      tbody,
+      tfoot,
+      thead,
+      tr,
+      th,
+      td,
+      article,
+      aside,
+      canvas,
+      details,
+      embed,
+      figure,
+      figcaption,
+      footer,
+      header,
+      hgroup,
+      menu,
+      nav,
+      output,
+      ruby,
+      section,
+      summary,
+      time,
+      mark,
+      audio,
+      video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+      }
+      /* HTML5 display-role reset for older browsers */
+      article,
+      aside,
+      details,
+      figcaption,
+      figure,
+      footer,
+      header,
+      hgroup,
+      menu,
+      nav,
+      section {
+        display: block;
+      }
+      body {
+        line-height: 1;
+      }
+      ol,
+      ul {
+        list-style: none;
+      }
+      blockquote,
+      q {
+        quotes: none;
+      }
+      blockquote:before,
+      blockquote:after,
+      q:before,
+      q:after {
+        content: "";
+        content: none;
+      }
+      table {
+        border-collapse: collapse;
+        border-spacing: 0;
+      }
+    </style>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        background-color: whitesmoke;
+      }
+      .container {
+        width: 90%;
+        max-width: 1024px;
+        margin: auto;
+      }
+      h1 {
+        background-color: brown;
+        color: whitesmoke;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        text-align: center;
+        font-size: 3rem;
+        text-shadow: 3px 5px rgb(101, 28, 28);
+      }
+      p {
+        font-size: 1rem;
+        line-height: 1.6;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container header-container"></div>
+    </header>
+    <main>
+      <div class="container main-container">
+        <h1>Class 1 Lab</h1>
+        <p style="color: black; font-size: 1.25rem">
+          Here is a collection of random questions with inline styling.
+        </p>
+        <p style="color: red; background-color: black">
+          1. What is your favourite colour?
+        </p>
+        <p style="color: blue; background-color: grey">
+          2. Do you have any pets?
+        </p>
+        <p style="color: orange; background-color: purple">
+          3. What kind of movies do you like?
+        </p>
+        <p style="color: green; background-color: palegreen">
+          4. Have you ever bungee-jumped? (I could never haha)
+        </p>
+      </div>
+    </main>
+    <footer>
+      <div class="container footer-container"></div>
+    </footer>
+    <script>
+      let siteVisitor = prompt("What is your name?");
+      console.log("Our visitors name is " + siteVisitor);
+      alert("Welcome to the site, " + siteVisitor + ".");
+
+      let favFood = prompt("what is your favourite type of food?");
+      console.log("Visitors favourite food is " + favFood);
+      alert("Great, " + siteVisitor + ". I like " + favFood + " too.");
+
+      let favColour = prompt("What is your favourite colour?");
+      console.log("Visitors favourite colour is " + favColour);
+      alert("Oohhh very nice choice, " + siteVisitor + ".");
+      let favPlace = prompt("Where is your favourite place in the world?");
+      console.log("Visitors favourite place is " + favPlace);
+      alert("Wow. " + favPlace + ". What a pick!");
+
+      let confirmation = confirm(
+        "Do you really like all of these things, " + siteVisitor + "?"
+      );
+      let message;
+      if (confirmation === true) {
+        alert(
+          "So " +
+            siteVisitor +
+            ", since you like these things so much I wonder if you would eat " +
+            favColour +
+            " " +
+            favFood +
+            " in " +
+            favPlace
+        );
+        console.log();
+      } else {
+        alert("Then why would you say all that?! Silly " + siteVisitor + "!");
+        console.log();
+      }
+    </script>
+  </body>
+</html>
